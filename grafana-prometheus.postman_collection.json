@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "920bbd13-1d38-4f8e-bdcc-d02015c01487",
+		"name": "grafana-prometheus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27568643"
+	},
+	"item": [
+		{
+			"name": "NATS-Monitoring",
+			"item": [
+				{
+					"name": "Accountz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/accstatz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"accstatz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "connz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/connz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"connz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "varz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/varz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"varz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gatewayz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/gatewayz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"gatewayz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "routez",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/routez",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"routez"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subsz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/subsz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"subsz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "leafz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/leafz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"leafz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accstatz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/accstatz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"accstatz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "jsz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/jsz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"jsz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "healthz",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/healthz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"healthz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "metrics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/metrics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"metrics"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/something",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"something"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API NATS Pub",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/path1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"path1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
