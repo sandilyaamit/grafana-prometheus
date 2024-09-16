@@ -8,6 +8,11 @@ scrape_configs:
     scrape_interval: 5s # Override the global default and scrape every 5 seconds
     static_configs:
       - targets: ['host.docker.internal:9090']
+  # Scrape NATS Server
+  - job_name: 'nats_server'
+    scrape_interval: 5s # Override the global default and scrape every 5 seconds
+    static_configs:
+      - targets: [ 'host.docker.internal:8222' ]
 
   # Scrape Spring Boot Application
   - job_name: 'spring_boot_application'
