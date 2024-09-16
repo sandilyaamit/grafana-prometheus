@@ -1,0 +1,33 @@
+global:
+  scrape_interval: 120s # By default, scrape targets every 120 seconds.
+  evaluation_interval: 120s # By default, evaluate rules every 120 seconds.
+
+scrape_configs:
+  # Scrape Prometheus itself
+  - job_name: 'prometheus'
+    scrape_interval: 5s # Override the global default and scrape every 5 seconds
+    static_configs:
+      - targets: ['host.docker.internal:9090']
+
+  # Scrape Spring Boot Application
+  - job_name: 'spring_boot_application'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 2s
+    static_configs:
+      - targets: ['host.docker.internal:8080']
+        labels:
+          application: "My Spring Boot Application"
+
+  # Scrape Golang NATS App
+  - job_name: 'golang_nats_app'
+    static_configs:
+      - targets: ['host.docker.internal:2112']
+
+  # Scrape NATS Prometheus Exporter
+  - job_name: 'nats_exporter'
+    metrics_path: '/metrics'
+    scrape_interval: 10s
+    static_configs:
+      - targets: ['host.docker.internal:7777']
+        labels:
+          application: "NATS Exporter"
